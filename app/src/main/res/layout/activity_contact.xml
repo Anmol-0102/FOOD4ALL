@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/btwoo"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".Contact"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_background"
+        android:padding="15dp"
+        android:src="@drawable/contact"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/black">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/name"
+            android:fontFamily="@font/opensans"
+            android:hint="@string/name_to_me"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/black">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/prompt_email"
+            android:fontFamily="@font/opensans"
+            android:hint="@string/prompt_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:maxLines="2"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            tools:ignore="ContentDescription,TextViewEdits" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/black">
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/message"
+            android:fontFamily="@font/opensans"
+            android:hint="@string/message"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="10"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+
+            tools:ignore="ContentDescription,TextViewEdits"
+            tools:targetApi="o" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="182dp"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</LinearLayout>
